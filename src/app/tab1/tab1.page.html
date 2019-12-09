@@ -1,13 +1,12 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
+    <ion-title style="text-align: center;">
       INPUT DATA
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    
     <ion-list lines="none">
       <ion-list-header>
       </ion-list-header>
@@ -19,9 +18,22 @@
         <ion-label>Waktu Mulai Berjualan</ion-label>
         <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
       </ion-item>
-      <ion-item>
-        <ion-label>Waktu Berakhir Berjualan</ion-label>
-        <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
-      </ion-item>
+
+      <ion-list>
+
+  <ion-item>
+    <ion-label fixed>Alamat</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Jumlah Pelanggan</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+</ion-list>
+      <div style="text-align: center;">
+      <ion-button (click)="simpan()" color="dark">SIMPAN</ion-button>
+    </div>
     </ion-list>
 </ion-content>
