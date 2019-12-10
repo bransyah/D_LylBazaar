@@ -1,27 +1,31 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      INPUT DATA
-    </ion-title>
+  <div style="text-align: center; padding-top: 60px; padding-bottom: 20px;">
+    <ion-title style="font-size: larger;">SIGN UP</ion-title>
+	</div>
   </ion-toolbar>
 </ion-header>
+  
 
-<ion-content>
+<ion-content Default>
     
-    <ion-list lines="none">
-      <ion-list-header>
-      </ion-list-header>
-      <ion-item>
-        <ion-label>Tanggal</ion-label>
-        <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
-      </ion-item>
-      <ion-item>
-        <ion-label>Waktu Mulai Berjualan</ion-label>
-        <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
-      </ion-item>
-      <ion-item>
-        <ion-label>Waktu Berakhir Berjualan</ion-label>
-        <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
-      </ion-item>
-    </ion-list>
+    <ion-list>
+
+  <ion-item>
+    <ion-label position="floating">Nama Pengguna</ion-label>
+    <ion-input type="Nama"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">e-Mail</ion-label>
+    <ion-input type="e-Mail"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="floating">Nomor HP</ion-label>
+    <ion-input type="Nomor"></ion-input>
+  </ion-item>
+  
+</ion-list>
+<div style="text-align: center"><ion-button Default>SIGN UP</ion-button></div>
 </ion-content>
