@@ -13,6 +13,10 @@ export class AwalPage implements OnInit {
   login() {
     this.navCtrl.navigateRoot('/login');
   }
+
+  daftar() {
+    this.navCtrl.navigateRoot('/signup');
+  }
   
    ngOnInit() {
   }
